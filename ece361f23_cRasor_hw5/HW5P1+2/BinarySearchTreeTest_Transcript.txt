@@ -1,0 +1,226 @@
+  03/12/2024   10:04.39   /home/mobaxterm  cd HW5/ece361f23_cRasor_hw5/
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5   main 
+  03/12/2024   10:05.42  ls
+HW5P1+2
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5   main 
+  03/12/2024   10:05.43  cdhw5
+cdhw5: command not found
+                                                                                         ✗
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5   main 
+  03/12/2024   10:05.49  cd HW5P1+2/
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:05.53  ls
+BinarySearchTreeTest.exe  bst_adt.c  bst_adt.h.gch  bst_test.c
+Makefile.mak              bst_adt.h  bst_adt.o      bst_test.o
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:05.56  make
+make: command not found
+
+ make can be installed using the following command: apt install make
+
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:06.00  make
+make: *** No targets specified and no makefile found.  Stop.
+                                                                                         ✗
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:06.33  make -f Makefile.mak
+gcc -Wall -std=c99 -o BinarySearchTreeTest bst_adt.o bst_test.o
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:06.43  ./BinarySearchTreeTest.exe
+Enter a date in the format mm/dd/yy (e.g. 11/1/24):
+11/1/24
+Data found!
+Date: 11/01/24, temp: 0, humid: 10
+Enter a date in the format mm/dd/yy (e.g. 11/1/24):
+
+
+Performing in-order traversal of the tree:
+Date: 11/01/24, temp: 0, humid: 10
+Date: 11/02/24, temp: 1, humid: 11
+Date: 11/03/24, temp: 2, humid: 12
+Date: 11/04/24, temp: 3, humid: 13
+Date: 11/05/24, temp: 4, humid: 14
+Date: 11/06/24, temp: 5, humid: 15
+Date: 11/07/24, temp: 6, humid: 16
+Date: 11/08/24, temp: 7, humid: 17
+Date: 11/09/24, temp: 8, humid: 18
+Date: 11/10/24, temp: 9, humid: 19
+Date: 11/11/24, temp: 10, humid: 20
+Date: 11/12/24, temp: 11, humid: 21
+Date: 11/13/24, temp: 12, humid: 22
+Date: 11/14/24, temp: 13, humid: 23
+Date: 11/15/24, temp: 14, humid: 24
+Date: 11/16/24, temp: 15, humid: 25
+Date: 11/17/24, temp: 16, humid: 26
+Date: 11/18/24, temp: 17, humid: 27
+Date: 11/19/24, temp: 18, humid: 28
+Date: 11/20/24, temp: 19, humid: 29
+Date: 11/21/24, temp: 20, humid: 30
+Date: 11/22/24, temp: 21, humid: 31
+Date: 11/23/24, temp: 22, humid: 32
+Date: 11/24/24, temp: 23, humid: 33
+Date: 11/25/24, temp: 24, humid: 34
+Date: 11/26/24, temp: 25, humid: 35
+Date: 11/27/24, temp: 26, humid: 36
+Date: 11/28/24, temp: 27, humid: 37
+Date: 11/29/24, temp: 28, humid: 38
+Date: 11/30/24, temp: 29, humid: 39
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:11.22 
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:11.26  make -f Makefile.mak
+gcc -Wall -std=c99 -o BinarySearchTreeTest bst_adt.o bst_test.o
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:11.31  ./BinarySearchTreeTest.exe
+Enter a date in the format mm/dd/yy (e.g. 11/1/24):
+
+
+Performing in-order traversal of the tree:
+Date: 11/01/24, temp: 0, humid: 10
+Date: 11/02/24, temp: 1, humid: 11
+Date: 11/03/24, temp: 2, humid: 12
+Date: 11/04/24, temp: 3, humid: 13
+Date: 11/05/24, temp: 4, humid: 14
+Date: 11/06/24, temp: 5, humid: 15
+Date: 11/07/24, temp: 6, humid: 16
+Date: 11/08/24, temp: 7, humid: 17
+Date: 11/09/24, temp: 8, humid: 18
+Date: 11/10/24, temp: 9, humid: 19
+Date: 11/11/24, temp: 10, humid: 20
+Date: 11/12/24, temp: 11, humid: 21
+Date: 11/13/24, temp: 12, humid: 22
+Date: 11/14/24, temp: 13, humid: 23
+Date: 11/15/24, temp: 14, humid: 24
+Date: 11/16/24, temp: 15, humid: 25
+Date: 11/17/24, temp: 16, humid: 26
+Date: 11/18/24, temp: 17, humid: 27
+Date: 11/19/24, temp: 18, humid: 28
+Date: 11/20/24, temp: 19, humid: 29
+Date: 11/21/24, temp: 20, humid: 30
+Date: 11/22/24, temp: 21, humid: 31
+Date: 11/23/24, temp: 22, humid: 32
+Date: 11/24/24, temp: 23, humid: 33
+Date: 11/25/24, temp: 24, humid: 34
+Date: 11/26/24, temp: 25, humid: 35
+Date: 11/27/24, temp: 26, humid: 36
+Date: 11/28/24, temp: 27, humid: 37
+Date: 11/29/24, temp: 28, humid: 38
+Date: 11/30/24, temp: 29, humid: 39
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:11.52  make -f Makefile.mak
+gcc -Wall -std=c99 -c bst_test.c
+bst_test.c: In function ‘main’:
+bst_test.c:82:18: warning: variable ‘searchNode’ set but not used [-Wunused-but-set-variable]
+   82 |     bst_node_ptr searchNode;
+      |                  ^~~~~~~~~~
+gcc -Wall -std=c99 -o BinarySearchTreeTest bst_adt.o bst_test.o
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:11.56  ./BinarySearchTreeTest.exe
+Creating 30 days of data for 11/1/24-11/30/24...
+Creating Binary Search Tree and inserting data...
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+11/1/24
+Data found!
+Date: 11/01/24, temp: 0, humid: 10
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+11/16/24
+Data found!
+Date: 11/16/24, temp: 15, humid: 25
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+11/1/25
+Wrong year, this tree contains 1 month of data from year '24'
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+12/1/24
+Wrong year, this tree contains 1 month of data from year '24'
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+Wrong year, this tree contains 1 month of data from year '24'
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+12/1/24
+Wrong month, this tree contains 1 month of data from month '11'
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+11/30/24
+Data found!
+Date: 11/30/24, temp: 29, humid: 39
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+
+
+Performing in-order traversal of the tree:
+Date: 11/01/24, temp: 0, humid: 10
+Date: 11/02/24, temp: 1, humid: 11
+Date: 11/03/24, temp: 2, humid: 12
+Date: 11/04/24, temp: 3, humid: 13
+Date: 11/05/24, temp: 4, humid: 14
+Date: 11/06/24, temp: 5, humid: 15
+Date: 11/07/24, temp: 6, humid: 16
+Date: 11/08/24, temp: 7, humid: 17
+Date: 11/09/24, temp: 8, humid: 18
+Date: 11/10/24, temp: 9, humid: 19
+Date: 11/11/24, temp: 10, humid: 20
+Date: 11/12/24, temp: 11, humid: 21
+Date: 11/13/24, temp: 12, humid: 22
+Date: 11/14/24, temp: 13, humid: 23
+Date: 11/15/24, temp: 14, humid: 24
+Date: 11/16/24, temp: 15, humid: 25
+Date: 11/17/24, temp: 16, humid: 26
+Date: 11/18/24, temp: 17, humid: 27
+Date: 11/19/24, temp: 18, humid: 28
+Date: 11/20/24, temp: 19, humid: 29
+Date: 11/21/24, temp: 20, humid: 30
+Date: 11/22/24, temp: 21, humid: 31
+Date: 11/23/24, temp: 22, humid: 32
+Date: 11/24/24, temp: 23, humid: 33
+Date: 11/25/24, temp: 24, humid: 34
+Date: 11/26/24, temp: 25, humid: 35
+Date: 11/27/24, temp: 26, humid: 36
+Date: 11/28/24, temp: 27, humid: 37
+Date: 11/29/24, temp: 28, humid: 38
+Date: 11/30/24, temp: 29, humid: 39
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:13.33  whoami
+casey
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:14.03 
+                                                                                         ✗
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:14.17 
+
+
+***********************EXPLANATION OF TRANSCRIPT*************************
+This test program creates 30 days worth of test data, creates a binary tree, 
+and inserts the data into the tree in the format of a binary search tree. The BST
+ADT contains functions for searching the tree for a specific date and an in order traversal
+that prints all of the data in the tree in order. This test program utilizes both of
+these functions. 
+
+This transcript also shows how I used a makefile to update the build and rerun it
+after I had added some print statements.
+***********************END EXPLANATION*************************************

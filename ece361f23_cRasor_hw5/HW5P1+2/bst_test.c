@@ -60,6 +60,7 @@ int main() {
   temp_humid_data data[NUM_DAYS];
 
      //create 30 days worth of data, store in data struct array
+	 printf("Creating 30 days of data for 11/1/24-11/30/24...\n");
   for (int i = 0; i < NUM_DAYS; ++i) {
       data[i].timestamp = mktime(&timestamp);
       data[i].temp = i;
@@ -70,6 +71,7 @@ int main() {
      //optimized order for storing up to 31 days of data in BST
   int order[] = {16,8,24,4,12,20,28,2,6,10,14,18,22,26,1,3,5,7,9,11,13,15,
                                                17,19,21,23,25,27,29,30,31};
+	printf("Creating Binary Search Tree and inserting data...\n");
   // create root node
   bst_node_ptr root = create_tree(data[order[0]-1]);
      //store data in BST using insert_node function and optimized order
@@ -80,7 +82,7 @@ int main() {
     bst_node_ptr searchNode;
     
 do {
-     printf("Enter a date in the format mm/dd/yy (e.g. 11/1/24):\n");
+     printf("Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):\n");
      getaLine(searchDate, DATE_STR_LEN);
      searchNode = search_tree(root, searchDate);
     
