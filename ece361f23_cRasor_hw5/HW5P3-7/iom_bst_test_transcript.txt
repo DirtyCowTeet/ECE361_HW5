@@ -1,0 +1,105 @@
+  03/12/2024   15:25.36   /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P3-7   main  whoami
+casey
+                                                                                                                       ✓
+
+  03/12/2024   15:25.52   /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P3-7   main  make clean
+rm *.o output
+rm: output: No such file or directory
+make: *** [Makefile:18: clean] Error 1
+                                                                                                                       ✗
+
+  03/12/2024   15:25.56   /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P3-7   main  make
+gcc -Wall -std=c99 -c iom_bst_test.c
+gcc -Wall -std=c99 -c bst_adt.h bst_adt.c
+gcc -Wall -std=c99 -c float_rndm.c float_rndm.h
+gcc -Wall -std=c99 -c iom361_r2.c iom361_r2.h float_rndm.o
+gcc: warning: float_rndm.o: linker input file unused because linking not done
+gcc -Wall -std=c99 -o IomBstTest iom_bst_test.o bst_adt.o iom361_r2.o float_rndm.o
+                                                                                                                       ✓
+
+  03/12/2024   15:26.01   /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P3-7   main  ./IomBstTest.exe
+Welcome iom BST test program!(crasor@pdx.edu)
+Current working directory: /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P3-7
+
+Initalizing iom361 with 16 switches and 16 LEDs
+  ____  ____  ____  ____
+RedDC= 0% (  0), GrnDC= 0% (  0), BluDC= 0% (  0)       Enable=OFF
+iom361_r2 initialized
+
+Generating data for 30 days of temperature and humidity values and inserting into BST...
+Starting date: 11/1/24...
+...Ending date: 11/30/24
+
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+11/1/24
+Data found!
+Date: 11/01/24, temp: 49, humid: 85
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+11/30/24
+Data found!
+Date: 11/30/24, temp: 42, humid: 72
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+11/12/24
+Data found!
+Date: 11/12/24, temp: 50, humid: 75
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+12/1/24
+Wrong month, this tree contains 1 month of data from month '11'
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+11/1/25
+Wrong year, this tree contains 1 month of data from year '24'
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+11/31/24
+Date not found in tree
+Enter a date to search for in the format mm/dd/yy (e.g. 11/1/24):
+
+
+Performing in-order traversal of the tree:
+Date: 11/01/24, temp: 49, humid: 85
+Date: 11/02/24, temp: 42, humid: 77
+Date: 11/03/24, temp: 47, humid: 86
+Date: 11/04/24, temp: 43, humid: 79
+Date: 11/05/24, temp: 45, humid: 82
+Date: 11/06/24, temp: 44, humid: 82
+Date: 11/07/24, temp: 48, humid: 81
+Date: 11/08/24, temp: 46, humid: 76
+Date: 11/09/24, temp: 51, humid: 74
+Date: 11/10/24, temp: 45, humid: 85
+Date: 11/11/24, temp: 43, humid: 74
+Date: 11/12/24, temp: 50, humid: 75
+Date: 11/13/24, temp: 44, humid: 83
+Date: 11/14/24, temp: 51, humid: 80
+Date: 11/15/24, temp: 46, humid: 74
+Date: 11/16/24, temp: 47, humid: 82
+Date: 11/17/24, temp: 44, humid: 74
+Date: 11/18/24, temp: 50, humid: 80
+Date: 11/19/24, temp: 45, humid: 75
+Date: 11/20/24, temp: 46, humid: 87
+Date: 11/21/24, temp: 51, humid: 73
+Date: 11/22/24, temp: 45, humid: 80
+Date: 11/23/24, temp: 44, humid: 75
+Date: 11/24/24, temp: 44, humid: 75
+Date: 11/25/24, temp: 43, humid: 73
+Date: 11/26/24, temp: 44, humid: 81
+Date: 11/27/24, temp: 51, humid: 83
+Date: 11/28/24, temp: 45, humid: 86
+Date: 11/29/24, temp: 49, humid: 86
+Date: 11/30/24, temp: 42, humid: 72
+                                                                                                                       ✓
+
+  03/12/2024   15:26.56   /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P3-7   main 
+
+***********EXPLANATION*************
+This program utilized the iom361,float_rndm, and bst_adt API's to simulate the 
+random generation of 30 days worth of temperature and humidity data. Once the 
+data is generated and placed into a binary search tree, it promts the user
+for dates to search the tree for data. The bst_adt contains a search function
+that outputs the data if found and returns a pointer to the node. If the data 
+cannot be found, there are print statements that tell the user that.
+
+The first thing that I did when writing this program was add all of the API's to the file
+folder and then create a Makefile to compile and build the program. During the developement 
+of the program I would simply save the notepad file, run the make command, run in the console,
+and repeat until the program worked as desired. As you can see, I ran make clean and then rebuilt
+the program 1 more time to show that the makefile works.
+*********END EXPLANATION***********
