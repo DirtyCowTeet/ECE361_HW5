@@ -1,0 +1,142 @@
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        docs/
+        ece361f23_cRasor_hw5/HW5P3-7/IomBstTest.exe
+        ece361f23_cRasor_hw5/HW5P3-7/Makefile
+        ece361f23_cRasor_hw5/HW5P3-7/bst_adt.c
+        ece361f23_cRasor_hw5/HW5P3-7/bst_adt.h
+        ece361f23_cRasor_hw5/HW5P3-7/bst_adt.h.gch
+        ece361f23_cRasor_hw5/HW5P3-7/bst_adt.o
+        ece361f23_cRasor_hw5/HW5P3-7/float_rndm.h.gch
+        ece361f23_cRasor_hw5/HW5P3-7/float_rndm.o
+        ece361f23_cRasor_hw5/HW5P3-7/iom361_r2.h.gch
+        ece361f23_cRasor_hw5/HW5P3-7/iom_bst_test.c
+        ece361f23_cRasor_hw5/HW5P3-7/iom_bst_test.o
+        ece361f23_cRasor_hw5/HW5P3-7/iom_bst_test_transcript.txt
+        starters/
+        test results/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ cd ece361f23_cRasor_hw5/
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../docs/
+        HW5P3-7/IomBstTest.exe
+        HW5P3-7/Makefile
+        HW5P3-7/bst_adt.c
+        HW5P3-7/bst_adt.h
+        HW5P3-7/bst_adt.h.gch
+        HW5P3-7/bst_adt.o
+        HW5P3-7/float_rndm.h.gch
+        HW5P3-7/float_rndm.o
+        HW5P3-7/iom361_r2.h.gch
+        HW5P3-7/iom_bst_test.c
+        HW5P3-7/iom_bst_test.o
+        HW5P3-7/iom_bst_test_transcript.txt
+        ../starters/
+        ../test results/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$ git add HW5P3-7/
+warning: in the working copy of 'ece361f23_cRasor_hw5/HW5P3-7/bst_adt.c', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ece361f23_cRasor_hw5/HW5P3-7/bst_adt.h', LF will be replaced by CRLF the next time Git touches it
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$ git commit -m "wrote program for parts 3-7 of the homework including makefile"
+[main 42eb0cb] wrote program for parts 3-7 of the homework including makefile
+ 12 files changed, 576 insertions(+)
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/IomBstTest.exe
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/Makefile
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/bst_adt.c
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/bst_adt.h
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/bst_adt.h.gch
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/bst_adt.o
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/float_rndm.h.gch
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/float_rndm.o
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/iom361_r2.h.gch
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/iom_bst_test.c
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/iom_bst_test.o
+ create mode 100644 ece361f23_cRasor_hw5/HW5P3-7/iom_bst_test_transcript.txt
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../docs/
+        ../starters/
+        ../test results/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$ git push
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 644.37 KiB | 3.81 MiB/s, done.
+Total 16 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/DirtyCowTeet/ECE361_HW5.git
+   57b5793..42eb0cb  main -> main
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   HW5P1+2/bst_test.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../docs/
+        ../starters/
+        ../test results/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$ git add HW5P1+2/bst_test.c
+warning: in the working copy of 'ece361f23_cRasor_hw5/HW5P1+2/bst_test.c', LF will be replaced by CRLF the next time Git touches it
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$ git commit -m "added function prototype and description for getaline"
+[main c4b1481] added function prototype and description for getaline
+ 1 file changed, 27 insertions(+), 15 deletions(-)
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 662 bytes | 662.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/DirtyCowTeet/ECE361_HW5.git
+   42eb0cb..c4b1481  main -> main
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5/ece361f23_cRasor_hw5 (main)
+$
