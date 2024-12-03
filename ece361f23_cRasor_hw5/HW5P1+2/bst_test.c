@@ -19,6 +19,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+#include <errno.h>
+#include <unistd.h>
 #include "bst_adt.h"
 
 
@@ -43,6 +45,20 @@ int getaLine(char s[],int lim){
 }
 
 int main() {
+	
+	// greet the user and display the working directory for the application
+    printf("Welcome BST test program!(crasor@pdx.edu)\n");
+    errno = 0;
+    char *buf = getcwd(NULL, 0);    // allocates a buffer to hold the path   
+    if (buf == NULL) {
+        perror("getcwd");
+        printf("Could not display the path\n");
+    }
+    else {
+        printf("Current working directory: %s\n", buf);
+        free(buf);
+    }
+    printf("\n");
 
      char searchDate[DATE_STR_LEN];
   //create test data
