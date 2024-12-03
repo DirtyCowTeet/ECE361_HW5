@@ -29,21 +29,16 @@
 //date length definition mm/dd/yy +\n + \0
 #define DATE_STR_LEN 10
 
-int getaLine(char s[],int lim){ 
-    int c, i;
-
-    // read the input line and store in s until we get a new line or
-    // exceed the maximum number of characters to read
-    for (i = 0; i < lim - 1 && (c = getchar())!=EOF && c!='\n'; ++i) 
-        s[i] = c; 
-
-    // append '\0' to terminate the string.  Include '\n' in the string
-    if (c == '\n') { 
-        s[i] = c; 
-    } 
-    s[i] = '\0'; 
-    return i; 
-}
+//Function prototypes
+/** getaLine() - Gets a line from stdin, taken from lineHelper API
+  * 	and modified to be used in this program
+  *
+  * @param	int lim: max length of input
+  * @param	char s[]: char array to hold string
+  *
+  *	@return length of string
+  */
+int getaLine(char s[],int lim);
 
 int main() {
 	
@@ -110,4 +105,21 @@ do {
  
 
   return 0;
+}
+
+//helper functions
+int getaLine(char s[],int lim){ 
+    int c, i;
+
+    // read the input line and store in s until we get a new line or
+    // exceed the maximum number of characters to read
+    for (i = 0; i < lim - 1 && (c = getchar())!=EOF && c!='\n'; ++i) 
+        s[i] = c; 
+
+    // append '\0' to terminate the string.  Include '\n' in the string
+    if (c == '\n') { 
+        s[i] = c; 
+    } 
+    s[i] = '\0'; 
+    return i; 
 }
