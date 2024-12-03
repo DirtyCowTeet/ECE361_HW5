@@ -1,0 +1,126 @@
+casey@CaseysPC MINGW64 ~/OneDrive/desktop
+$ cd ECE361/HW5/
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5
+$ ls
+ docs/   ece361f23_cRasor_hw5/   starters/  'test results'/
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5
+$ echo "# ECE361_HW5" >> README.md
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5
+$ git init
+Initialized empty Git repository in C:/Users/casey/OneDrive/Desktop/ECE361/HW5/.git/
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (master)
+$ git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'casey@CaseysPC.(none)')
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (master)
+$ git config --global user.name "Casey Rasor"
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (master)
+$ git config --global user.email "crasor@pdx.edu"
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (master)
+$ git commit -m "first commit"
+[master (root-commit) e49ca62] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (master)
+$ git branch -M main
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ git remote add origin https://github.com/DirtyCowTeet/ECE361_HW5.git
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DirtyCowTeet/ECE361_HW5.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ git add ece361f23_cRasor_hw5/
+warning: in the working copy of 'ece361f23_cRasor_hw5/HW5P1+2/bst_adt.c', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ece361f23_cRasor_hw5/HW5P1+2/bst_adt.h', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ece361f23_cRasor_hw5/HW5P1+2/bst_test.c', LF will be replaced by CRLF the next time Git touches it
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ ^C
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ git cofig core.autocrlf true
+git: 'cofig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ git config core.autocrlf ture
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5
+$ git config core.autocrlf true
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ece361f23_cRasor_hw5/HW5P1+2/bst_adt.c
+        new file:   ece361f23_cRasor_hw5/HW5P1+2/bst_adt.h
+        new file:   ece361f23_cRasor_hw5/HW5P1+2/bst_test.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        docs/
+        starters/
+        test results/
+
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ git commit -m "Adding binary search tree source and header files"
+[main 4aa0e40] Adding binary search tree source and header files
+ 3 files changed, 376 insertions(+)
+ create mode 100644 ece361f23_cRasor_hw5/HW5P1+2/bst_adt.c
+ create mode 100644 ece361f23_cRasor_hw5/HW5P1+2/bst_adt.h
+ create mode 100644 ece361f23_cRasor_hw5/HW5P1+2/bst_test.c
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 4.13 KiB | 4.13 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DirtyCowTeet/ECE361_HW5.git
+   e49ca62..4aa0e40  main -> main
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$ ^C
+
+casey@CaseysPC MINGW64 ~/OneDrive/desktop/ECE361/HW5 (main)
+$

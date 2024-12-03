@@ -1,0 +1,107 @@
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:13.33  whoami
+casey
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:14.03 
+                                                                                         ✗
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:14.17  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   bst_test.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../Git_Transcripts/
+        ../../docs/
+        BinarySearchTreeTest.exe
+        BinarySearchTreeTest_Transcript.txt
+        Makefile.mak
+        bst_adt.h.gch
+        bst_adt.o
+        bst_test.o
+        ../../starters/
+        ../../test results/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5/HW5P1+2   main 
+  03/12/2024   10:19.58  cd ..
+                                                                                         ✓
+
+  /home/mobaxterm/HW5/ece361f23_cRasor_hw5   main 
+  03/12/2024   10:20.44  cd ..
+                                                                                         ✓
+
+  03/12/2024   10:20.51   /home/mobaxterm/HW5   main  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ece361f23_cRasor_hw5/HW5P1+2/bst_test.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git_Transcripts/
+        docs/
+        ece361f23_cRasor_hw5/HW5P1+2/BinarySearchTreeTest.exe
+        ece361f23_cRasor_hw5/HW5P1+2/BinarySearchTreeTest_Transcript.txt
+        ece361f23_cRasor_hw5/HW5P1+2/Makefile.mak
+        ece361f23_cRasor_hw5/HW5P1+2/bst_adt.h.gch
+        ece361f23_cRasor_hw5/HW5P1+2/bst_adt.o
+        ece361f23_cRasor_hw5/HW5P1+2/bst_test.o
+        starters/
+        test results/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+                                                                                         ✓
+
+  03/12/2024   10:20.54   /home/mobaxterm/HW5   main  git add ece361f23_cRasor_hw5/
+warning: in the working copy of 'ece361f23_cRasor_hw5/HW5P1+2/bst_test.c', LF will be replaced by CRLF the next time Git touches it
+                                                                                         ✓
+
+  03/12/2024   10:21.37   /home/mobaxterm/HW5   main  git commit -m "Added print statements to test file, Added Makefile, Added .o files"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'casey@Caseys-Laptop.(none)')
+                                                                                         ✗
+
+  03/12/2024   10:22.43   /home/mobaxterm/HW5   main  git config --global user.email "crasor@pdx.edu"
+                                                                                         ✓
+
+  03/12/2024   10:23.17   /home/mobaxterm/HW5   main  git config --global user.name "casey rasor"
+                                                                                         ✓
+
+  03/12/2024   10:23.37   /home/mobaxterm/HW5   main  git commit -m "Added print statements to test file, Added Makefile, Added .o files"
+[main 0a80818] Added print statements to test file, Added Makefile, Added .o files
+ 7 files changed, 241 insertions(+), 1 deletion(-)
+ create mode 100644 ece361f23_cRasor_hw5/HW5P1+2/BinarySearchTreeTest.exe
+ create mode 100644 ece361f23_cRasor_hw5/HW5P1+2/BinarySearchTreeTest_Transcript.txt
+ create mode 100644 ece361f23_cRasor_hw5/HW5P1+2/Makefile.mak
+ create mode 100644 ece361f23_cRasor_hw5/HW5P1+2/bst_adt.h.gch
+ create mode 100644 ece361f23_cRasor_hw5/HW5P1+2/bst_adt.o
+ create mode 100644 ece361f23_cRasor_hw5/HW5P1+2/bst_test.o
+                                                                                         ✓
+
+  03/12/2024   10:23.43   /home/mobaxterm/HW5   main  git push
+Username for 'https://github.com':
